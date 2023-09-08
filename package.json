@@ -27,7 +27,9 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "curtainsjs": "^8.1.5",
+    "locomotive-scroll": "^4.1.4",
     "three": "^0.156.1"
   }
 }

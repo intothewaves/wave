@@ -2,17 +2,15 @@ body {
 	/* make the body fits our viewport */
 	position: relative;
 	width: 100%;
-	height: 100vh;
 	margin: 0;
-	overflow: hidden;
 	}
 	#canvas {
 	/* make the canvas wrapper fits the document */
 	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: 0;
 	left: 0;
+	height: 100vh;
 	}
 	.plane {
 	/* define the size of your plane */
@@ -23,4 +21,11 @@ body {
 	.plane img {
 	/* hide the img element */
 	display: none;
+	}
+	.spring-physics-demo{
+		width: 100px;
+	}
+
+	.scevent{
+		height: 200vh;
 	}

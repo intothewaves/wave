@@ -1,4 +1,22 @@
 import {Curtains, Plane} from "curtainsjs";
+import LocomotiveScroll from 'locomotive-scroll';
+import anime from 'animejs/lib/anime.es.js';
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+
+
+anime({
+    targets: '.spring-physics-demo',
+    translateX: 250,
+    direction: 'alternate',
+    loop: true,
+    easing: 'spring(1, 80, 10, 0)'
+  })
+
+
 // wait for everything to be ready
 window.addEventListener("load", () => {
 // set up our WebGL context and append the canvas to our wrapper
