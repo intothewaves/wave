@@ -2,6 +2,7 @@ import {Curtains, Plane} from "curtainsjs";
 import LocomotiveScroll from 'locomotive-scroll';
 import anime from 'animejs/lib/anime.es.js';
 
+
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
@@ -44,3 +45,4 @@ plane.onRender(() => {
 plane.uniforms.time.value++; // update our time uniform value
 });
 });
+

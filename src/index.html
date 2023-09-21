@@ -4,10 +4,21 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shin Portfolio | new wave new design</title>
+	<title>SHIN Portfolio | new wave new design</title>
 	<link rel="stylesheet" href="./main.css">
 </head>
 <body>
+	<div class="scevent" data-scroll-container>
+	<header data-scroll-section>
+		<img src="./images/logo.svg" alt="logo">
+		<h1 class="logo">SHIN YOUJIN</h1>
+		<ul class="gnb">
+			<li><a href="#">Works</a></li>
+			<li><a href="#">Archive</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</header>
 	<!-- div that will hold our WebGL canvas -->
 	<div id="canvas"></div>
 	<!-- div used to create our plane -->
@@ -17,7 +28,7 @@
 	
 	</div>
 
-	<div class="scevent" data-scroll-container>
+	
 		<div data-scroll-section>
 			<h1 data-scroll>Hey</h1>
 			<p data-scroll>👋</p>
@@ -26,10 +37,13 @@
 			<h2 data-scroll data-scroll-speed="1">What's up?</h2>
 			<p data-scroll data-scroll-speed="2">😬</p>
 		</div>
+		<div class="spring-physics-demo">
+			<h1>hello</h1>
+		</div>
+
+		<div id="three-canvas"></div>
 	</div>
-	<div class="spring-physics-demo">
-		<h1>hello</h1>
-	</div>
+	
 	<!-- vertex shader -->
 <script id="plane-vs" type="x-shader/x-vertex">
 	precision mediump float;
