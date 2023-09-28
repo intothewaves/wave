@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,46 +8,219 @@
 	<title>SHIN Portfolio | new wave new design</title>
 	<link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
 	<div class="scevent" data-scroll-container>
-	<header data-scroll-section>
-		<img src="./images/logo.svg" alt="logo">
-		<h1 class="logo">SHIN YOUJIN</h1>
-		<ul class="gnb">
-			<li><a href="#">Works</a></li>
-			<li><a href="#">Archive</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</header>
-	<!-- div that will hold our WebGL canvas -->
-	<div id="canvas"></div>
-	<!-- div used to create our plane -->
-	<div class="plane">
+		
+		<!-- header -->
+		<header data-scroll-section>
+			<div class="inner">
+				<h1 class="logo">
+					<a href="#">
+						<img src="./images/logo.svg" alt="logo">
+						<span class="sound-only">Shin Portfolio</span>
+					</a>
+				</h1>
+				<nav class="gnb-menu">
+					<h2 class="sound-only">navigation</h2>
+					<ul class="depth01">
+						<li>
+							<a href="#">
+								Works
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Archive
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Contact
+							</a>
+						</li>
+					</ul>
+					<a class="lang-menu" href="#">
+						<img src="images/globe.svg" alt="language">
+					</a>
+				</nav>
+				
+			</div>
+		</header>
+		<!-- header -->
+		<!-- main -->
+		<div class="main">
+			<section class="visual">
+				<div class="video-sect">
+					<video src="images/fractal.mp4" autoplay loop muted></video>
+				</div>
+				<div class="img-sect">
+					<svg width="1800" height="788" viewBox="0 0 1800 788" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect y="393" width="1800" height="1" fill="white" fill-opacity="0.7"/>
+						<path d="M1041.5 394C1041.5 611.325 865.547 787.5 648.5 787.5C431.453 787.5 255.5 611.325 255.5 394C255.5 176.675 431.453 0.5 648.5 0.5C865.547 0.5 1041.5 176.675 1041.5 394Z" stroke="white" stroke-opacity="0.7"/>
+						<path d="M1300.5 390.5C1300.5 604.786 1126.79 778.5 912.5 778.5C698.214 778.5 524.5 604.786 524.5 390.5C524.5 176.214 698.214 2.5 912.5 2.5C1126.79 2.5 1300.5 176.214 1300.5 390.5Z" stroke="white" stroke-opacity="0.7"/>
+						<path d="M1599.5 390.5C1599.5 604.786 1425.79 778.5 1211.5 778.5C997.214 778.5 823.5 604.786 823.5 390.5C823.5 176.214 997.214 2.5 1211.5 2.5C1425.79 2.5 1599.5 176.214 1599.5 390.5Z" stroke="white" stroke-opacity="0.7"/>
+						</svg>
+				</div>
+				<div class="title-sect">
+					<h2 class="main-title">
+						Product <span class="deco">D</span>esigner
+					</h2>
+					<p class="main-sub-title">
+						SHIN Portfolio <span class="small">Vol.1</span>
+					</p>
+				</div>
+				<div class="slogan-sect">
+					<p class="slogan-top">
+						<span class="deco">New</span>wave
+					</p>
+					<p class="slogan-bottom">
+						New <span class="deco">D</span>esign
+					</p>
+				</div>
+				<div class="copy-sect">
+					<p class="copy">© SHIN YOUJIN / 2023</p>
+				</div>
+				<div class="desc-sect">
+					<p class="desc">
+						<strong>A new design</strong> created by <br>
+						the flow of the world that <br>
+						continues to change like waves.
+					</p>
+				</div>
+			</section>
+			<section class="intro">
+				<div class="flow">
+					<div class="flow-text top">
+						<p class="regular">Data-Driven UX</p>
+						<p class="bold">Value Creation in Business</p>
+						<p class="regular">2D</p>
+						<img class="moving" src="images/and.svg">
+						<p class="bold">3D Motion Graphic</p>
+
+					</div>
+					<div class="flow-text bottom">
+						<p class="bold">Interaction design</p>
+						<img class="moving" src="images/and.svg">
+						<p class="regular">Development</p>
+						<p class="regular">Memorable Artworks</p>
+					</div>
+				</div>
+				<div class="greetings">
+					<p class="kor">안녕하세요</p>
+					<p class="eng"></p>
+				</div>
+			</section>
+			<section class="project">
+				<div class="project-title">
+					<p>Featured <span class="deco">P</span>rojects</p>
+				</div>
+				<ul class="list">
+					<li>
+						<div class="img-sect">
+							<img src="images/local.jpg" alt="local's habit">
+						</div>
+						<div class="text-sect">
+							<p class="category">
+								App
+							</p>
+							<p class="project-title">
+								Local&#39;s Habit : Share where the local often goes
+							</p>
+							<ul class="det">
+								<li>
+									<p class="cate">YEAR</p>
+									<p class="des">2023</p>
+								</li>
+								<li>
+									<p class="cate">ROLE</p>
+									<p class="des">DESIGN</p>
+								</li>
+							</ul>
+							<a href="#" class="view-btn">
+								VIEW PROJECT
+								<svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M29.693 23.9205L11.034 23.9205L11.034 21.6705L29.693 21.6705L22.6135 14.591L24.2045 13L34 22.7955L24.2045 32.591L22.6135 31L29.693 23.9205Z"
+										fill="white" />
+									<circle cx="22.5" cy="22.5" r="21.5" transform="rotate(90 22.5 22.5)" stroke="white"
+										stroke-width="2" />
+								</svg>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="img-sect">
+							<img src="images/ktcs.jpg" alt="ktcs">
+						</div>
+						<div class="text-sect">
+							<p class="category">
+								RESPONSIVE WEB
+							</p>
+							<p class="project-title">
+								kt cs : Korea&#39;s Best 
+								Customer Service Platform Company
+							</p>
+							<ul class="det">
+								<li>
+									<p class="cate">YEAR</p>
+									<p class="des">2022</p>
+								</li>
+								<li>
+									<p class="cate">ROLE</p>
+									<p class="des">DESIGN, DEV</p>
+								</li>
+							</ul>
+							<a href="#" class="view-btn">
+								VIEW PROJECT
+								<svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M29.693 23.9205L11.034 23.9205L11.034 21.6705L29.693 21.6705L22.6135 14.591L24.2045 13L34 22.7955L24.2045 32.591L22.6135 31L29.693 23.9205Z"
+										fill="white" />
+									<circle cx="22.5" cy="22.5" r="21.5" transform="rotate(90 22.5 22.5)" stroke="white"
+										stroke-width="2" />
+								</svg>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<!-- main -->
+		
+
+<!-- div that will hold our WebGL canvas -->
+<div id="canvas"></div>
+<!-- div used to create our plane -->
+<div class="plane">
 	<!-- image that will be used as texture by our plane -->
 	<img src="./images/sea.jpg" crossorigin="" />
-	
-	</div>
-
-	
+</div>
 		<div data-scroll-section>
-			<h1 data-scroll>Hey</h1>
+			<p data-scroll>Hey</p>
 			<p data-scroll>👋</p>
 		</div>
 		<div data-scroll-section>
-			<h2 data-scroll data-scroll-speed="1">What's up?</h2>
+			<p data-scroll data-scroll-speed="1">What's up?</p>
 			<p data-scroll data-scroll-speed="2">😬</p>
 		</div>
 		<div class="spring-physics-demo">
-			<h1>hello</h1>
+			<p>hello</p>
 		</div>
 
 		<div id="three-canvas"></div>
 	</div>
-	
+
 	<!-- vertex shader -->
-<script id="plane-vs" type="x-shader/x-vertex">
-	precision mediump float;
+	<script id="plane-vs" type="x-shader/x-vertex">
+		precision mediump float;
 	// those are the mandatory attributes that the lib sets
 	attribute vec3 aVertexPosition;
 	attribute vec2 aTextureCoord;
@@ -69,7 +243,7 @@
 	</script>
 	<!-- fragment shader -->
 	<script id="plane-fs" type="x-shader/x-fragment">
-	precision mediump float;
+		precision mediump float;
 	// get our varyings
 	varying vec3 vVertexPosition;
 	varying vec2 vTextureCoord;
@@ -87,5 +261,6 @@
 	gl_FragColor = texture2D(uSampler0, textureCoord);
 	}
 	</script>
-	</body>
+</body>
+
 </html>

@@ -1,41 +1,109 @@
+/* Typography */
+.sound-only {
+    position: absolute;
+    left: -999px;
+    width: 0;
+    height: 0;
+    text-indent: -999px;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
 body {
 	/* make the body fits our viewport */
 	position: relative;
 	width: 100%;
 	margin: 0;
-	}
-	header{
-		display: flex;
-	}
-	#canvas {
+	background-color: #000000;
+}
+p,a{
+	color: white;
+	line-height: 1.4;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+a{
+	display: block;
+}
+ol, ul {
+    list-style: none;
+}
+svg{
+	width: 100%;
+}
+/* header */
+header{
+	width: 100%;
+	padding: 20px 60px 0;
+}
+header .inner {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+header .gnb-menu{
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+}
+header .gnb-menu .depth01 li{
+	margin-bottom: 8px;
+}
+header .gnb-menu .depth01 li a{
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.visual{
+	position: relative;
+}
+.visual .video-sect{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#canvas {
 	/* make the canvas wrapper fits the document */
 	position: absolute;
-	top: 100px;
+	top: auto;
 	right: 0;
 	left: 0;
+	bottom: 0;
 	height: 900px;
-	}
-	.plane {
+	z-index: 100;
+}
+
+.plane {
 	/* define the size of your plane */
 	width: 80%;
 	height: 900px;
 	margin: 10vh auto;
-	}
-	.plane img {
+}
+
+.plane img {
 	/* hide the img element */
 	display: none;
-	}
-	.spring-physics-demo{
-		width: 100px;
-	}
+}
 
-	.scevent{
-		height: 200vh;
-	}
-	#three-canvas{
-		width: 100vw;
-		height: 100vh;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-	}
+.spring-physics-demo {
+	width: 100px;
+}
+
+.scevent {
+	height: 500vh;
+}
+
+#three-canvas {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
