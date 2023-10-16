@@ -29,7 +29,9 @@
   "dependencies": {
     "animejs": "^3.2.1",
     "curtainsjs": "^8.1.5",
+    "gsap": "^3.12.2",
     "locomotive-scroll": "^4.1.4",
+    "splitting": "^1.0.6",
     "three": "^0.156.1"
   }
 }

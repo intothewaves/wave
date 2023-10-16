@@ -1,19 +1,26 @@
-import {Curtains, Plane} from "curtainsjs";
 import LocomotiveScroll from 'locomotive-scroll';
-import anime from 'animejs/lib/anime.es.js';
+import Splitting from "splitting";
 
+Splitting();
 
+'use strict';
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    smooth: true
+    smooth: true,
+    smartphone: { smooth: false }, tablet: { smooth: false }
 });
 
-anime({
-    targets: '.spring-physics-demo',
-    rotate: 100,
-    direction: 'alternate',
-    loop: true,
-    easing: 'spring(1, 80, 10, 0)'
-});
+//scroll section on
+const footer = document.querySelector('footer');
+window.addEventListener('scroll', () => {
+    let pageYOffset = window.scrollY + screen.height / 2;
+    let scrollLocation = document.documentElement.scrollTop;
+    let windowHeight = window.innerHeight;
+    let fullHeight = document.body.scrollHeight;
 
+    if (scrollLocation + windowHeight + 200 >= fullHeight) {
+        footer.classList.add('on');
+    } 
+
+});
 
