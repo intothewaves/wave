@@ -117,6 +117,7 @@ header .inner {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	padding: 0;
 }
 header .gnb-menu{
 	width: 15%;
